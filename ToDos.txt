@@ -1,15 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
 - Carousels
 
 - Popovers
