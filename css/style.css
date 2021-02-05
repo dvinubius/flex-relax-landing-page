@@ -1,0 +1,117 @@
+/* --- Components design --- */
+/*@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/dropdown.css");
+@import url("components/badge.css");
+@import url("components/list.css");*/
+
+@import url("components/banner.css");
+@import url("components/header.css");
+@import url("components/mytabnav.css");
+@import url("components/card.css");
+
+
+/* --- Fonts --- */
+body {
+ 	background-color: radial-gradient(hsla(360, 0%, 50%, 1), hsla(360, 0%, 90%, 1));
+}
+
+/* tabnav Stuff - specific for this page */
+
+
+/*consider adjusting box-sizing property to border-box if overflows happen */
+
+#testimonials {
+	padding-top: 10px;
+
+}
+
+#testimonials .card {
+  text-align: center;
+  justify-content:space-around;
+  height: 340px;
+}
+#testimonials .card-body {
+  padding: auto 2em;
+  /*overflow: visible;*/
+  max-height: 340px;
+}
+#testimonials .card-body.p {
+  flex-grow: 0.5;
+}
+
+.card footer {
+	margin-bottom: 1em;
+}
+.card h4 {
+  margin: 1em auto;
+}
+.card h4, .card p {
+	font-style: italic !important;
+}
+
+.my-card a:hover {
+	cursor: pointer;
+}
+
+.dev_info {
+  color: #c1c1c1;
+	display:inline-block;
+}
+.dev_info:hover {
+  cursor: pointer;
+}
+#banner-info  {
+	position:absolute;
+	left: 1em;
+	bottom: 1em;
+}
+#tabnav-info {
+	position: absolute;
+	left: -1em;
+	top: 1em;
+}
+
+
+.mid-screen-demo {
+  display:none !important;
+}
+.small-screen-demo {
+  display:none !important;
+}
+
+@media screen and (max-width:1200px) {
+  .big-screen-demo {
+    display:none !important;
+  }
+  .mid-screen-demo {
+    display:flex !important;
+  }
+  .small-screen-demo {
+    display:none !important;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .mid-screen-demo {
+    display:none !important;
+  }
+  .small-screen-demo {
+    display:flex !important;
+  }
+}
+
+
+
+
+
+
+
+
+.test_div {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  background-color: lightblue;
+}

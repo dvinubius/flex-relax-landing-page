@@ -1,0 +1,126 @@
+.mytabs {
+	background: #53443F;
+  color: white;
+	padding: 10px 10px 1px 10px;
+	border-bottom: none;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.mytabs h3 {
+	font-size: 1.1em;
+	margin-bottom:0;
+}
+
+.mytabs p {
+	opacity: 0.5;
+	margin-bottom:0;
+}
+
+
+.mytabs-item {
+	padding-top: 10px;
+  background: #756A66 !important;
+	border-radius: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.mytabs-item.active {
+  background: white !important;
+  color: black;
+}
+.mytabs-item:hover {
+	cursor:pointer;
+}
+
+
+.tab-content {
+	border-bottom: 1px solid #53443F;
+	display:block;
+	background: #53443F;
+	padding: 0 10px 10px 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.tab-pane {
+	background-color: white;
+	height: 400px;
+}
+
+
+#nav_tabs_container {
+  position:relative;
+}
+
+.tab-pane .container1 {
+	padding: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 400px;
+	text-align: center;
+}
+.tab-pane h3, h4, p {
+	padding: 0.5em;
+}
+.tab-pane img {
+	display: block;
+	max-height: 95%;
+	max-width:70%;
+}
+.tab-pane a:hover {
+	cursor:pointer;
+}
+
+@media screen and (max-width: 992px) {
+	#bliss .container1 {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		padding-left: 0.25em;
+		padding-right: 0.5em;
+	}
+
+	#bliss .container1 div {
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#bliss img {
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.mytabs-item {
+		width:50%;
+	}
+
+	.tab-pane .container1 {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.tab-pane h3, h4, p {
+		padding: 0.5em;
+	}
+	.tab-pane img {
+		display: block;
+		max-height: 60%;
+		max-width:90%;
+	}
+
+	#bliss .small-screen-demo > div {
+		max-width: 70%;
+		justify-content: space-between;
+	}
+
+	#bliss .small-screen-demo > div img {
+		max-width: 100%;
+	}
+
+}
